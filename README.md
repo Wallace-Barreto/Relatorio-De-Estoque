@@ -71,7 +71,7 @@ struct Produto {
 
 ---
 
-## 🗺️ Mapa Global de Histórico
+## 🗺️ Mapa Global
 ```cpp
 unordered_map<int, int> dados_anteriores;
 ```
