@@ -25,10 +25,7 @@ O relatório final é gerado e salvo no arquivo relatorio_estoque_data_hora.txt.
 Ao final do processo, os dados dinamicamente alocados são liberados da memória.
 
 🧱 Estruturas de Dados
-Relatorio
-cpp
-Copiar
-Editar
+
 struct Relatorio {
     string data;
     string hora;
@@ -40,10 +37,9 @@ struct Relatorio {
     int total_movimentacoes;
     float valor_total_estoque;
 };
-mercadorias
-cpp
-Copiar
-Editar
+
+mercadorias:
+
 struct mercadorias {
     int codigo;
     char nome[33];
@@ -55,10 +51,8 @@ struct mercadorias {
     string status_reabastecimento;
     string data_cadastro;
 };
-Produto
-cpp
-Copiar
-Editar
+Produto:
+
 struct Produto {
     int id;
     int Quantidade;
@@ -72,36 +66,27 @@ struct Produto {
     char TipoUnidade[TIPO_TAM + 1];
     char nome[NOME_PRODUTO_TAM + 1];
 };
+
 🗺️ Mapa Global
-cpp
-Copiar
-Editar
+
 unordered_map<int, int> dados_anteriores;
 Armazena os IDs dos produtos e suas respectivas quantidades de execuções anteriores.
 
 💾 Alocação Dinâmica
-cpp
-Copiar
-Editar
 Relatorio* relatorio = new Relatorio;
 relatorio->objetos = new mercadorias[quantidade_produtos];
 delete relatorio;
 🧮 Exemplo de Recursividade
 Cálculo do valor total do estoque:
-
-cpp
-Copiar
-Editar
 float calcular_valor_total(const mercadorias* produtos, int total) {
     if (total == 0)
         return 0.0;
     return (produtos->qtd_atual * produtos->preco_custo) + calcular_valor_total(produtos + 1, total - 1);
 }
+
 🧩 Funções Declaradas
+
 utilitarios.h
-cpp
-Copiar
-Editar
 string obter_data_atual();
 string obter_hora_atual();
 void preencher_campos_relatorio(Relatorio &rel);
@@ -114,19 +99,15 @@ void gerar_relatorio(const Relatorio &rel);
 void carregarRelatorio(Relatorio *relatorio, const char *nomeArquivo);
 void salvarRelatorioProdutos(const Relatorio &relatorio, const char *nomeArquivo);
 void gerador_relatorio();
+
 produto.h
-cpp
-Copiar
-Editar
 float calcular_valor_total(const mercadorias* produtos, int total);
 string determinar_status_reabastecimento(int qtd_atual, int estoque_minimo, int estoque_normal);
 void carregarDadosAnteriores(const char* nomeArquivo);
 void salvarDadosAnteriores(const char* nomeArquivo);
 void verificarQtdAnterior(mercadorias &objeto);
+
 📚 Bibliotecas Utilizadas
-cpp
-Copiar
-Editar
 #include <iostream>
 #include <stdio.h>
 #include <string>
