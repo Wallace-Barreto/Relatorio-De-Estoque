@@ -32,7 +32,6 @@ struct Relatorio {
     string fonte_dados;
     mercadorias* objetos;
     int total_produtos;
-    int total_movimentacoes;
     float valor_total_estoque;
 };
 ```
