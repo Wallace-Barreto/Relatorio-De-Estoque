@@ -87,7 +87,7 @@ delete relatorio;
 
 ---
 
-## 🧮 Exemplo de Recursividade
+## 🧮 Recursividade
 Cálculo do valor total do estoque:
 ```cpp
 float calcular_valor_total(const mercadorias* produtos, int total) {
