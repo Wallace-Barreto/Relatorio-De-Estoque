@@ -113,7 +113,6 @@ void escrever_analise_financeira(ofstream &arquivo, const Relatorio &rel);
 void escrever_assinatura(ofstream &arquivo, const Relatorio &rel);
 void gerar_relatorio(const Relatorio &rel);
 void carregarRelatorio(Relatorio* relatorio, const char* nomeArquivo);
-void salvarRelatorioProdutos(const Relatorio& relatorio, const char* nomeArquivo);
 void gerador_relatorio();
 ```
 
