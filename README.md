@@ -118,7 +118,7 @@ void gerador_relatorio();
 
 ### `produto.h`
 ```cpp
-float calcular_valor_total(const mercadorias* produtos, int total);
+float calcular_valor_total(const mercadorias *produtos, int *total);
 string determinar_status_reabastecimento(int qtd_atual, int estoque_minimo, int estoque_normal);
 void carregarDadosAnteriores(const char* nomeArquivo);
 void salvarDadosAnteriores(const char* nomeArquivo);
