@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1744420141 source:c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\main.cpp
+	<iostream>
+	<locale>
+	"gconio.h"
+	"utilitarios.h"
+
+1744419609 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\gconio.h
+	<stdio.h>
+	<conio.h>
+	<time.h>
+	<windows.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<termios.h>
+
+1744420141 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\utilitarios.h
+	<windows.h>
+	<iostream>
+	<fstream>
+	<iomanip>
+	<ctime>
+	<locale>
+	"produto.h"
+	"relatorio.h"
+	"tabelas.h"
+	<limits>
+	<locale>
+	<algorithm>
+
+1744420203 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\produto.h
+	<iostream>
+	<string>
+	"produto.h"
+	<unordered_map>
+	<fstream>
+
+1744420142 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\relatorio.h
+	<string>
+	"produto.h"
+
+1744420142 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\tabelas.h
+	"tipos.h"
+
+1744420142 c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\tipos.h
+	<ctime>
+
+1744420305 source:c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\produto.cpp
+	"produto.h"
+
+1744420142 source:c:\users\walla\documents\sistemas empresarial de vendas_relatorio_de_estoque\utilitarios.cpp
+	"utilitarios.h"
+
